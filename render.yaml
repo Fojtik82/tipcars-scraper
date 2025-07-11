@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: tipcars-scraper
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python tipcars_scraper.py
+    autoDeploy: false
